@@ -9,6 +9,6 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 }
 
 // Build test_fuzzer.cc with asan and link against libFuzzer.
-// clang++ -fsanitize=address,fuzzer test_fuzzer.cc
+// clang++ -fsanitize=address,fuzzer testing.cc
 // Run the fuzzer with no corpus.
-// ./a.out
+// ./a.out INPUT_CORPUS
